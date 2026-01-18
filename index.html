@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Focus Timer</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="app">
+    <h1>🎯 Focus Timer</h1>
+
+    <!-- Time Options -->
+    <div class="time-options">
+    <button class="time-btn" data-time="25">25 min</button>
+    <button class="time-btn" data-time="40">40 min</button>
+    <button class="time-btn" data-time="60">60 min</button>
+    </div>
+
+    <!-- Task Input -->
+    <input
+    type="text"
+    id="taskInput"
+    placeholder="What will you focus on?"
+    />
+
+    <!-- Timer -->
+    <div class="timer" id="timer">00:00</div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+    <button id="startBtn">Start</button>
+    <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- History -->
+    <h3>Focus History</h3>
+    <ul id="historyList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
